@@ -1,0 +1,733 @@
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+    color: #666
+}
+
+div,
+h2,
+h5,
+p {
+    margin: 0;
+    padding: 0
+}
+
+p {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    text-rendering: optimizeLegibility
+}
+
+h2 {
+    font-size: 1.6875rem
+}
+
+h5 {
+    font-size: 1.125rem
+}
+
+@media only screen and (min-width:40.0625em) {
+
+    h2,
+    h5 {
+        line-height: 1.4
+    }
+
+    h2 {
+        font-size: 2.3125rem
+    }
+
+    h5 {
+        font-size: 1.125rem
+    }
+}
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important
+    }
+
+    a {
+        text-decoration: underline
+    }
+
+    a:visited {
+        text-decoration: underline
+    }
+
+    a[href]:after {
+        content: " ("attr(href) ")"
+    }
+
+    img {
+        page-break-inside: avoid;
+        max-width: 100% !important
+    }
+
+    @page {
+        margin: .34in
+    }
+
+    p {
+        orphans: 3;
+        widows: 3
+    }
+
+    h2 {
+        orphans: 3;
+        widows: 3;
+        page-break-after: avoid
+    }
+}
+
+@media only screen and (min-width:48em) {
+
+    h2,
+    h5 {
+        line-height: 1.4
+    }
+
+    h2 {
+        font-size: 2.3125rem
+    }
+
+    h5 {
+        font-size: 1.125rem
+    }
+}
+
+@media only screen and (min-width:31.25em) {
+    body \ .hs-form fieldset.form-columns-2 .hs-form-field {
+        width: 100%
+    }
+}
+
+@-webkit-keyframes bounceInLeft {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0)
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0)
+    }
+
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0)
+    }
+
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0)
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes bounceInLeft {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0)
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0)
+    }
+
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0)
+    }
+
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0)
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.bounceInLeft {
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4)
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 30px rgba(204, 169, 44, 0)
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0)
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4)
+    }
+
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 30px rgba(204, 169, 44, 0)
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0)
+    }
+}
+
+@keyframes outer-pulse {
+    0% {
+        -moz-transform: scale(0.6);
+        opacity: 0
+    }
+
+    50% {
+        -moz-transform: scale(0.6);
+        opacity: 0
+    }
+
+    70% {
+        opacity: .12
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        opacity: 0
+    }
+}
+
+@-moz-keyframes outer-pulse {
+    0% {
+        -moz-transform: scale(0.6);
+        opacity: 0
+    }
+
+    50% {
+        -moz-transform: scale(0.6);
+        opacity: 0
+    }
+
+    70% {
+        opacity: .12
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        opacity: 0
+    }
+}
+
+.bones-container {
+    background: url(https://www.digitalzillas.com/images/h/bg-bones.png) no-repeat center center;
+    background-size: contain
+}
+
+.home-video {
+    position: relative
+}
+
+.home-video:before,
+.home-video:after {
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute;
+    z-index: 1
+}
+
+.home-video:before {
+    background: url(https://www.digitalzillas.com/images/h/line-video-section-top.png) no-repeat top center;
+    height: 228px;
+    margin: 0 0 0 -33px;
+    top: -50px;
+    width: 67px
+}
+
+.home-video:after {
+    background: url(https://www.digitalzillas.com/images/h/line-video-section-bottom-mobile.png) no-repeat top center;
+    height: 89px;
+    margin: 0 0 0 -1px;
+    bottom: -74px;
+    width: 2px
+}
+
+.home-video img {
+    display: inherit;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+   
+}
+
+@media only screen and (min-width:48em) {
+    .video-container {
+        padding: 100px 0 40px 0
+    }
+
+    .video-container .row {
+        max-width: 580px
+    }
+
+    .bones-container {
+        background-size: contain;
+        position: relative
+    }
+
+    .dz-difference h5 {
+        font-size: 25px
+    }
+}
+
+@media only screen and (min-width:64em) {
+    .video-container .zilla {
+        background: url(https://www.digitalzillas.com/images/h/side-zilla.png) no-repeat bottom center;
+       top: 20%;
+        left: 90px;
+        display: none;
+        height: 655px;
+        margin-left: -127px;
+        position: absolute;
+        transition: all ease .5s;
+        width: 253px;
+        z-index: 5
+    }
+
+    .dz-difference h5 {
+        font-size: 30px
+    }
+}
+
+.active {
+    display: block !important
+}
+
+@media only screen and (min-width:78.1875em) {
+    .bones-container:before {
+        background: url(https://www.digitalzillas.com/images/h/video-image-left.png) no-repeat 0 0;
+        content: "";
+        display: block;
+        height: 600px;
+        left: 0;
+        position: absolute;
+        top: 100px;
+        width: 600px;
+        z-index: 1
+    }
+
+    .bones-container:after {
+        background: url(https://www.digitalzillas.com/images/h/video-image-right.png) no-repeat 0 0;
+        content: "";
+        display: block;
+        height: 600px;
+        right: 0;
+        position: absolute;
+        top: 100px;
+        width: 600px;
+        z-index: 1
+    }
+}
+
+@media only screen and (min-width:90.0625em) {
+    .bones-container:before {
+        left: 300px
+    }
+
+    .bones-container:after {
+        right: 300px
+    }
+}
+
+@media only screen and (min-width:120.0625em) {
+    .bones-container:before {
+        left: 22%
+    }
+
+    .bones-container:after {
+        right: 22%
+    }
+}
+
+.row {
+    max-width: 1620px
+}
+
+::selection,
+::-moz-selection {
+    background: #ff8a00
+}
+
+.play-btn {
+    box-sizing: initial;
+    height: 96px;
+    left: 50%;
+    margin-left: -48px;
+    position: absolute;
+    top: 35%;
+    width: 96px;
+    z-index: 8
+}
+
+.play-btn:hover .inner-pulse,
+.play-btn:hover .outer-pulse {
+    animation: none
+}
+
+.dot {
+    background: rgba(102, 207, 40, 0.9);
+    border: 4px solid #66cf28;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 96px;
+    position: absolute;
+    transition: all .2s ease-in-out;
+    width: 96px;
+    z-index: 10
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #000 !important
+}
+
+* {
+    font-variant-ligatures: none
+}
+
+body {
+    position: relative;
+    z-index: 1;
+    width: 100%
+}
+
+@media only screen and (min-width:31.25em) {
+    body \ .hs-form fieldset.form-columns-2 .hs-form-field {
+        width: 100%
+    }
+}
+
+body {
+    font-family: "hind", sans-serif
+}
+
+.outer-pulse {
+    position: absolute
+}
+
+body {
+    color: #414141;
+    font-weight: 400
+}
+
+::selection,
+::-moz-selection {
+    background: #ff8a00
+}
+
+.video-wrap {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.video-wrap iframe {
+    height: auto;
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%
+}
+
+.video-inner {
+    border: 2px solid #66cf28;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    opacity: 0;
+    background: #101010
+}
+
+.action {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 1em 2em;
+    color: #66cf28;
+    border: 2px solid;
+    border-radius: 40px;
+    background: 0;
+    font-size: 24px;
+    -webkit-flex: none;
+    flex: none
+}
+
+.action:focus {
+    outline: 0
+}
+
+@media screen and (min-width:25em) {
+    .video-inner {
+        width: 30vw;
+        height: 30vw;
+        -webkit-transform: scale3d(0.1, 0.1, 1) rotate3d(0, 0, 1, -5deg);
+        transform: scale3d(0.1, 0.1, 1) rotate3d(0, 0, 1, -5deg)
+    }
+}
+
+@media screen and (min-width:25em) and (min-aspect-ratio:1.7777777778) {
+    .video-inner {
+        width: 30vh;
+        height: 30vh
+    }
+}
+
+.play-btn {
+    box-sizing: initial;
+    height: 96px;
+    left: 50%;
+    margin-left: -48px;
+    position: absolute;
+    top: 47%;
+    width: 96px;
+    z-index: 8;
+    opacity: 0.6;
+}
+
+.play-btn:hover .inner-pulse,
+.play-btn:hover .outer-pulse {
+    animation: none
+}
+
+.dot span {
+    width: 29px;
+    height: 44px;
+    margin: 23px 0 0 32px;
+    background: url(https://www.digitalzillas.com/images/common/icon-play-btn.svg) 0 0 no-repeat;
+    display: block;
+    opacity: 1;
+    position: absolute
+}
+
+.dot:hover {
+    background: #66cf28;
+    transform: scale(1.16)
+}
+
+.dot:hover span {
+    opacity: 0
+}
+
+.dot:hover span.hover {
+    opacity: 1
+}
+
+.inner-pulse {
+    background: transparent;
+    border: 4px solid #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 126px;
+    width: 126px;
+    -webkit-animation: pulse 2s ease-out;
+    -moz-animation: pulse 2s ease-out;
+    animation: pulse 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    top: -15px;
+    left: -15px;
+    z-index: 1;
+    opacity: 0;
+    position: absolute
+}
+
+.outer-pulse {
+    border: 4px solid #fff;
+    background: transparent;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 156px;
+    width: 156px;
+    -webkit-animation: outer-pulse 2s ease-out;
+    -moz-animation: outer-pulse 2s ease-out;
+    animation: outer-pulse 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    top: -30px;
+    left: -30px;
+    z-index: 1;
+    opacity: 0;
+    position: absolute
+}
+
+@media only screen and (min-width:37.5em) {
+    .play-btn {
+        top: 42%
+    }
+}
+
+@media only screen and (min-width:48em) {
+    .play-btn {
+        top: 44%
+    }
+}
+
+
+
+
+
+@media only screen and (min-width:37.5em) {
+    .play-btn {
+        top: 42%
+    }
+}
+
+@media only screen and (min-width:48em) {
+    .play-btn {
+        top: 44%
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(0.4);
+        opacity: 0
+    }
+
+    50% {
+        -moz-transform: scale(0.4);
+        opacity: 0
+    }
+
+    80% {
+        opacity: .4
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        opacity: 0
+    }
+}
+
+@-moz-keyframes outer-pulse {
+    0% {
+        -moz-transform: scale(0.6);
+        opacity: 0
+    }
+
+    50% {
+        -moz-transform: scale(0.6);
+        opacity: 0
+    }
+
+    70% {
+        opacity: .12
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        opacity: 0
+    }
+}
+
+.wrapper {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.video-main {
+    position: relative;
+    display: inline-block
+}
+
+.video {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    background: transparent;
+    color: #fff;
+    display: inline-block;
+    background: #000;
+    z-index: 999
+}
+
+.lity-container {
+    background: #60bf28 !important
+}
